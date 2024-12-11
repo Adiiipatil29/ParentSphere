@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/splash_background"> <!-- Gradient background -->
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="322dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/save" />
+
+    <!-- Title/Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome! Choose your login option"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="24dp"
+        android:gravity="center" />
+
+    <!-- Parent Login Button -->
+    <Button
+        android:id="@+id/btnParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent Login"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="32dp"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:background="@drawable/button_background" />
+
+    <!-- Teacher Login Button -->
+    <Button
+        android:id="@+id/btnTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher Login"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:background="@drawable/button_background" />
+</LinearLayout>

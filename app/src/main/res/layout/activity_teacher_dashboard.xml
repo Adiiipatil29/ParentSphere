@@ -1,0 +1,56 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <!-- Dashboard Title -->
+    <TextView
+        android:id="@+id/tvDashboardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teacher Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Action Buttons -->
+    <Button
+        android:id="@+id/takeAttendanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Attendance"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/updatePerformanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Performance"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/messageParentsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message Parents"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/generateClassCodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Classroom Code"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

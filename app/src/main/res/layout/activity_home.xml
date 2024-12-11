@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top Bar with Profile, Dashboard, Notifications -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#3F51B5"
+            android:padding="8dp">
+
+            <!-- Profile Button -->
+            <Button
+                android:id="@+id/profileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Profile"
+                android:textColor="#ffffff" />
+
+            <!-- Dashboard Button -->
+            <Button
+                android:id="@+id/dashboardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Dashboard"
+                android:textColor="#ffffff" />
+
+            <!-- Notification Button -->
+            <Button
+                android:id="@+id/notificationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Notifications"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- College Image -->
+                <ImageView
+                    android:id="@+id/collegeImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/college_image"
+                    android:contentDescription="College Image" />
+
+                <!-- College Information Section -->
+                <TextView
+                    android:id="@+id/collegeInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deogiri Institute of Engineering and Management Studies"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#333333" />
+
+                <!-- Director's Words Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:elevation="4dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/directorsWordsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Director's Words"
+                        android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/directorPhoto"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/director_photo"
+                        android:contentDescription="Director Photo"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circular_border" />
+
+                    <TextView
+                        android:id="@+id/directorsWordsContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Over the past few years Deogiri Institute of Engineering and Management Studies has redefined the Engineering and Management education in Marathwada region. Starting from nowhere in 2009 we have crossed many milestones and have set new academic records.
+
+Quality infrastructure, well equipped laboratories with advanced software and workshop equipped with tools and machines, library with thousands of required texts, National and International Journals with spacious reading hall make the campus a giant laboratory, where the future Engineers experiment, test and prove their potential in different dimensions.
+
+The institute always takes initiative in providing advanced educational facilities to furnish substantial support to facilitate learning process."
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#555555" />
+                    <TextView
+                        android:id="@+id/directorsName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dr. Ulhas Shiurkar Director – DIEMS"
+                        android:textSize="14sp"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#777777"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <!-- Dean's Words Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:elevation="4dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/deansWordsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dean Academics' Words"
+                        android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/deanPhoto"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/dean_photo"
+                        android:contentDescription="Dean Photo"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circular_border" />
+                    <TextView
+                        android:id="@+id/deansWordsContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="As we journey through our academic pursuits, it is paramount to recognize that success extends beyond subject-specific knowledge. Developing a diverse set of skills is instrumental in navigating the complexities of both academia and the broader world. Along with regular academics, DIEMS also cultivate different skills such as Critical Thinking, Effective Communication, Problem-Solving, Collaboration and Teamwork, Adaptability and Resilience, Time Management within the students which are very much required for rapidly changing world.
+
+DIEMS always strive for a well-rounded education that  encompasses not only academic knowledge but also these essential skills. Embrace opportunities within and beyond the classroom to enhance these skills. This will serve as a strong foundation for success in your academic endeavours and future careers."
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#555555" />
+
+                    <TextView
+                        android:id="@+id/deansName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dr. Subhash Lahane\nDean Academics – DIEMS"
+                        android:textSize="14sp"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#777777"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

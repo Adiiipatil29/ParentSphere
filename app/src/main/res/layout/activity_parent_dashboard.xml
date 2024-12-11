@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/viewAttendanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Attendance" />
+
+    <Button
+        android:id="@+id/viewPerformanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Performance" />
+
+    <Button
+        android:id="@+id/messageTeachersButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message Teachers" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout" />
+</LinearLayout>

@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <!-- Title Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher Sign Up"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Username Input Field -->
+        <EditText
+            android:id="@+id/teacherUsername"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:layout_marginBottom="16dp"
+            android:gravity="center" />
+
+        <!-- Password Input Field -->
+        <EditText
+            android:id="@+id/teacherPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:layout_marginBottom="16dp"
+            android:gravity="center" />
+
+        <!-- Teacher Name Input Field -->
+        <EditText
+            android:id="@+id/teacherName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Teacher Name"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:layout_marginBottom="16dp"
+            android:gravity="center" />
+
+        <!-- Course Name Input Field -->
+        <EditText
+            android:id="@+id/courseName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Course Name"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:layout_marginBottom="16dp"
+            android:gravity="center" />
+
+        <!-- Department Input Field -->
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Department"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:layout_marginBottom="24dp"
+            android:gravity="center" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnTeacherSignup"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:background="@drawable/rounded_button_background"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</RelativeLayout>
